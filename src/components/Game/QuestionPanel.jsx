@@ -41,17 +41,15 @@ const QuestionPanel = ({
         <p className="info-text">Options:</p>
         <div className="province-chips">
           {provinceOptions.map((province, index) => (
-            <button 
+            <div 
               key={index}
-              onClick={() => onAnswerSelect && onAnswerSelect(province.name)}
-              disabled={isAnswerChecked}
               className={`province-chip ${
                 isAnswerChecked 
                   ? (index === correctAnswerIndex ? 'correct' : (selectedAnswer === index ? 'incorrect' : ''))
                   : ''
               }`}
               style={{
-                cursor: isAnswerChecked ? 'default' : 'pointer',
+                cursor: 'default',
                 backgroundColor: isAnswerChecked 
                   ? (index === correctAnswerIndex ? '#28a745' : (selectedAnswer === index ? '#dc3545' : '#FFA726'))
                   : '#FFA726',
@@ -62,7 +60,7 @@ const QuestionPanel = ({
               }}
             >
               {province.name}
-            </button>
+            </div>
           ))}
         </div>
       </div>
@@ -71,4 +69,3 @@ const QuestionPanel = ({
 };
 
 export default QuestionPanel;
-
