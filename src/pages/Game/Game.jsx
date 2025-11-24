@@ -273,7 +273,16 @@ const Game = () => {
         setCorrectlyAnsweredQuestions(prev => [...prev, currentQuestion]);
       }
       
-      const correctAudio = new Audio('${import.meta.env.BASE_URL}/sfx/correct.mp3');
+      // Ses yolunu güvenli hale getir
+      const getAudioPath = (filename) => {
+         // BASE_URL genellikle '/' veya '/repo-adi/' şeklinde gelir
+         // Eğer BASE_URL '/' ise ve dosya yolu da '/' ile başlıyorsa '//' oluşabilir
+         const baseUrl = import.meta.env.BASE_URL;
+         const cleanBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+         return `${cleanBase}/sfx/${filename}`;
+      };
+
+      const correctAudio = new Audio(getAudioPath('true.mp3'));
       correctAudio.volume = 0.5;
       correctAudio.play().catch(error => console.log('Audio play failed:', error));
     } else {
@@ -288,7 +297,14 @@ const Game = () => {
         });
       }
       
-      const wrongAudio = new Audio(`${import.meta.env.BASE_URL}/sfx/wrong.mp3`);
+      // Ses yolunu güvenli hale getir
+      const getAudioPath = (filename) => {
+         const baseUrl = import.meta.env.BASE_URL;
+         const cleanBase = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+         return `${cleanBase}/sfx/${filename}`;
+      };
+
+      const wrongAudio = new Audio(getAudioPath('false.mp3'));
       wrongAudio.volume = 0.5;
       wrongAudio.play().catch(error => console.log('Audio play failed:', error));
     }
