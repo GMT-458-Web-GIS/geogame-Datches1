@@ -273,7 +273,7 @@ const Game = () => {
         setCorrectlyAnsweredQuestions(prev => [...prev, currentQuestion]);
       }
       
-      const correctAudio = new Audio('/sfx/true.mp3');
+      const correctAudio = new Audio('${import.meta.env.BASE_URL}/sfx/correct.mp3');
       correctAudio.volume = 0.5;
       correctAudio.play().catch(error => console.log('Audio play failed:', error));
     } else {
@@ -288,7 +288,7 @@ const Game = () => {
         });
       }
       
-      const wrongAudio = new Audio('/sfx/false.mp3');
+      const wrongAudio = new Audio(`${import.meta.env.BASE_URL}/sfx/wrong.mp3`);
       wrongAudio.volume = 0.5;
       wrongAudio.play().catch(error => console.log('Audio play failed:', error));
     }

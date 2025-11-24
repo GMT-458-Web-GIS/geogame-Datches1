@@ -908,7 +908,9 @@ export const getCelebritiesByProvince = (province) => {
 };
 
 export const getCelebrityPhoto = (celebrity) => {
-  return celebrity.photo || '/images/celebrities/placeholder.jpg';
+  const path = celebrity.photo || '/images/celebrities/placeholder.jpg';
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${import.meta.env.BASE_URL}${cleanPath}`;
 };
 
 export const getAllProvinces = () => {

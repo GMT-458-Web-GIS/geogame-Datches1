@@ -108,7 +108,7 @@ const GameMap = ({
     if (!mapRef.current || mapInstanceRef.current) return;
 
     const vectorSource = new VectorSource({
-      url: '/maps/turkey-full.geojson',
+      url: `${import.meta.env.BASE_URL}maps/turkey-full.geojson`,
       format: new GeoJSON()
     });
     

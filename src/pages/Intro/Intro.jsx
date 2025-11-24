@@ -21,7 +21,7 @@ const Intro = () => {
   };
 
   return (
-    <div className="intro-container">
+    <div className="intro-container" style={{backgroundImage: `url(${import.meta.env.BASE_URL}images/wallpaper.png)`}}>
       <div className="intro-content">
         <div className="geoguessr-header">
           <div className="brand-badge" style={{color: '#FFFFFF !important', filter: 'brightness(1)'}}>FAMOUSGUESSR</div>
