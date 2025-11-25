@@ -15,6 +15,7 @@
 - **Score System**: +10 points per correct answer
 - **Celebrity Database**: 50+ Turkish famous people with birthplace data
 - **Responsive Design**: Optimized for desktop and mobile devices
+- **Local Multiplayer**: 2-player turn-based mode on a single device (Hotseat)
 
 ### Frontend Layout
 
@@ -70,6 +71,16 @@ The game features **two difficulty levels** with time-based progression:
 - Each wrong answer: **-3 seconds** time penalty
 - Game ends if time reaches 0 from wrong answers
 - Strategic gameplay requiring quick thinking and accuracy
+
+#### **⚔️ 2 Player VS Mode (Local Multiplayer)**
+Played on a single device where two players take turns guessing.
+- **Turn-Based System**: 2 Players take turns answering questions.
+- **Time Limit**: Fixed **90 seconds** total game time.
+- **Scoring**: 
+  - Each correct answer: **+10 points**.
+  - **Time Pressure Penalty**: **-1 point per 2 seconds** while waiting/thinking.
+- **Winning Condition**: The player with the highest score wins when the global timer runs out.
+- **Interaction**: Players click provinces on the map to answer, just like in single-player modes.
 
 ### How many questions will there be?
 - **Dynamic question count** based on player performance
