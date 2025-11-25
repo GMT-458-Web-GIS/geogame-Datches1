@@ -19,14 +19,19 @@
 
 ### Frontend Layout
 
-<img width="1919" height="917" alt="image" src="https://github.com/user-attachments/assets/27f13691-7a87-4aad-8416-51be36ce5929" />
+<img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/48a7f1bb-c7a8-48ed-864c-0bbf154ee097" />
+
+
 *Intro Screen* *Main menu with difficulty selection and game information*
 
+<img width="722" height="796" alt="image2" src="https://github.com/user-attachments/assets/8752c88d-050e-4e5a-849f-22b6f1b636f0" />
+<img width="718" height="808" alt="image 3" src="https://github.com/user-attachments/assets/94cdfafb-529e-4ba7-8960-81d020dc5663" />
+<img width="725" height="846" alt="image 4" src="https://github.com/user-attachments/assets/0fbc6dfd-2930-4b0b-b160-67a3a9aef8b3" />
 
-<img width="1919" height="902" alt="image2" src="https://github.com/user-attachments/assets/077b918b-8bb5-424b-9cf7-207e1ed8a5a9" />
-*Game rules*
+*Game rules for, normal, hard and dup mode respectively.*
 
-<img width="1919" height="916" alt="image1" src="https://github.com/user-attachments/assets/131aaa9c-da7d-44cf-b553-ba1f33507cbe" />
+<img width="1914" height="912" alt="image1" src="https://github.com/user-attachments/assets/1cc84279-c9c2-4ad5-b32e-82d667e24845" />
+
 *Game Screen* *Interactive gameplay with province highlighting and real-time feedback*![Uploading image.png…]()
 
 
@@ -72,7 +77,7 @@ The game features **two difficulty levels** with time-based progression:
 - Game ends if time reaches 0 from wrong answers
 - Strategic gameplay requiring quick thinking and accuracy
 
-#### **⚔️ 2 Player VS Mode (Local Multiplayer)**
+#### **⚔️ Duo (Local Multiplayer)**
 Played on a single device where two players take turns guessing.
 - **Turn-Based System**: 2 Players take turns answering questions.
 - **Time Limit**: Fixed **90 seconds** total game time.
@@ -85,7 +90,7 @@ Played on a single device where two players take turns guessing.
 ### How many questions will there be?
 - **Dynamic question count** based on player performance
 - Questions continue until timer expires
-- Typical session: **8-15 questions** depending on difficulty and speed
+- Typical session: **10-15 questions** depending on difficulty and speed
 - No predetermined question limit
 - Questions drawn randomly from celebrity database without repetition
 
@@ -94,6 +99,7 @@ Played on a single device where two players take turns guessing.
 - Game is purely **time-based**
 - In Normal mode: Timer runs continuously regardless of wrong answers
 - In Hard mode: Wrong answers reduce time, but no instant game over
+- In Duo mode: -1 point per 2 seconds while waiting/thinking.
 - Focus on maximizing score within time limit
 
 ---
