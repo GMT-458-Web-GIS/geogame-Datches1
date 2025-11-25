@@ -32,7 +32,7 @@
 
 <img width="1914" height="912" alt="image1" src="https://github.com/user-attachments/assets/1cc84279-c9c2-4ad5-b32e-82d667e24845" />
 
-*Game Screen* *Interactive gameplay with province highlighting and real-time feedback*![Uploading image.png…]()
+*Game Screen* *Interactive gameplay with province highlighting and real-time feedback*
 
 
 #### Desktop Layout
